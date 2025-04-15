@@ -13,7 +13,7 @@
 body {
     font-family: 'Space Mono', monospace;
     background-color: var(--terminal-dark);
-    color: var(--terminal-light);
+    color: #ffffff;
     line-height: 1.6;
     position: relative;
 }
@@ -68,6 +68,17 @@ h1, h2, h3, h4, h5, h6 {
     background-color: var(--terminal-green) !important;
 }
 
+/* Improved card-text readability */
+.card-text, ul.card-text li {
+    color: #ffffff !important;
+    font-weight: 400;
+}
+
+/* Text that needs higher contrast */
+.text-muted {
+    color: #b0b0b0 !important;
+}
+
 /* Button Styling */
 .btn-outline-light:hover {
     background-color: var(--terminal-green);
@@ -96,6 +107,15 @@ a:hover {
 
 .terminal-screenshot:hover {
     box-shadow: 0 0 30px var(--glow-color);
+}
+
+/* Gallery images */
+.gallery-img {
+    max-height: 350px;
+    width: 100%;
+    object-fit: cover;
+    border: 1px solid var(--terminal-green);
+    box-shadow: 0 0 15px var(--glow-color);
 }
 
 /* Blinking Cursor Effect */
@@ -139,6 +159,11 @@ h2.terminal-text::before {
     
     .terminal-screenshot {
         max-width: 100%;
+    }
+    
+    /* Better sizing for gallery images on mobile */
+    .gallery-img {
+        max-height: 250px;
     }
 }
 
