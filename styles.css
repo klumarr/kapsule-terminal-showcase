@@ -111,11 +111,24 @@ a:hover {
 
 /* Gallery images */
 .gallery-img {
-    max-height: 350px;
-    width: 100%;
-    object-fit: cover;
+    height: 600px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
     border: 1px solid var(--terminal-green);
+    border-radius: 0.375rem;
     box-shadow: 0 0 15px var(--glow-color);
+    margin: 0 auto;
+    display: block;
+}
+
+/* Gallery container to center images */
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    margin-bottom: 1rem;
 }
 
 /* Blinking Cursor Effect */
@@ -163,7 +176,11 @@ h2.terminal-text::before {
     
     /* Better sizing for gallery images on mobile */
     .gallery-img {
-        max-height: 250px;
+        height: 450px;
+    }
+    
+    .gallery-container {
+        height: 500px;
     }
 }
 
