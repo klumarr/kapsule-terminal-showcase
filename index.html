@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAPSULE Terminal Experience | Ken Lumumba</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-dark text-light">
+    <div class="container py-5">
+        <header class="text-center mb-5">
+            <h1 class="display-4 terminal-text">KAPSULE Terminal</h1>
+            <div class="badge bg-success mb-3">In Development</div>
+            <p class="lead mb-4">Kinetic Archive for Preserving Subjective Unique Lived Experiences</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="#overview" class="btn btn-outline-light">Overview</a>
+                <a href="#features" class="btn btn-outline-light">Features</a>
+                <a href="#tech" class="btn btn-outline-light">Technology</a>
+                <a href="#gallery" class="btn btn-outline-light">Gallery</a>
+                <a href="#contact" class="btn btn-outline-light">Contact</a>
+            </div>
+        </header>
+
+        <section id="overview" class="mb-5">
+            <div class="card bg-dark border-success mb-4">
+                <div class="card-body">
+                    <h2 class="card-title terminal-text">Project Overview</h2>
+                    <p class="card-text">
+                        KAPSULE is an experimental interactive web application recreating a retrofuturistic terminal interface. 
+                        It gives users access to a fictional temporal archive system with multiple interactive features.
+                    </p>
+                    <p class="card-text">
+                        The project combines nostalgic terminal aesthetics with modern web technologies to create an immersive, 
+                        narrative-driven experience that feels both retro and futuristic simultaneously.
+                    </p>
+                </div>
+            </div>
+
+            <div class="text-center mb-5">
+                <img src="https://via.placeholder.com/1200x600?text=KAPSULE+Terminal+Demo" alt="KAPSULE Terminal Demo" class="img-fluid rounded terminal-screenshot">
+                <div class="mt-2 text-muted">
+                    <small>Live preview available at: <a href="https://thekapsule.vercel.app/" target="_blank" class="text-light">thekapsule.vercel.app</a></small>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="mb-5">
+            <h2 class="terminal-text mb-4">Key Features</h2>
+            
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100 bg-dark border-success">
+                        <div class="card-body">
+                            <h3 class="card-title h5 terminal-text">
+                                <i class="fas fa-terminal me-2"></i>Interactive Terminal Interface
+                            </h3>
+                            <ul class="card-text">
+                                <li>Command-line interaction with realistic typing animations</li>
+                                <li>Custom command recognition and processing</li>
+                                <li>History navigation and command memory</li>
+                                <li>Error handling with helpful messages</li>
+                                <li>Responsive design for desktop and mobile</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100 bg-dark border-success">
+                        <div class="card-body">
+                            <h3 class="card-title h5 terminal-text">
+                                <i class="fas fa-broadcast-tower me-2"></i>TABS Radio System
+                            </h3>
+                            <ul class="card-text">
+                                <li>Three distinct frequency channels with unique content</li>
+                                <li>Real-time audio streaming with visual feedback</li>
+                                <li>Teletext-style information display</li>
+                                <li>Channel switching with transition effects</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100 bg-dark border-success">
+                        <div class="card-body">
+                            <h3 class="card-title h5 terminal-text">
+                                <i class="fas fa-book me-2"></i>Research Logs Archive
+                            </h3>
+                            <ul class="card-text">
+                                <li>Corrupted documentation style with glitch effects</li>
+                                <li>Security clearance levels restricting access</li>
+                                <li>Temporal-based content unlocking</li>
+                                <li>Cross-reference navigation system</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100 bg-dark border-success">
+                        <div class="card-body">
+                            <h3 class="card-title h5 terminal-text">
+                                <i class="fas fa-drafting-compass me-2"></i>Blueprint Documentation
+                            </h3>
+                            <ul class="card-text">
+                                <li>Technical schematics for in-world systems</li>
+                                <li>Corruption effects simulating damaged archives</li>
+                                <li>Interactive elements for user exploration</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tech" class="mb-5">
+            <h2 class="terminal-text mb-4">Technology Stack</h2>
+            
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="card h-100 bg-dark border-success">
+                        <div class="card-body">
+                            <h3 class="card-title h5 terminal-text">Frontend</h3>
+                            <ul class="card-text small">
+                                <li><strong>Framework:</strong> SvelteKit</li>
+                                <li><strong>Languages:</strong> TypeScript, JavaScript</li>
+                                <li><strong>Styling:</strong> SCSS/SASS, CSS3</li>
+                                <li><strong>Animation:</strong> CSS animations, Svelte transitions</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card h-100 bg-dark border-success">
+                        <div class="card-body">
+                            <h3 class="card-title h5 terminal-text">Backend & Data</h3>
+                            <ul class="card-text small">
+                                <li><strong>Database:</strong> Firebase Firestore (NoSQL)</li>
+                                <li><strong>Authentication:</strong> Firebase Auth</li>
+                                <li><strong>Storage:</strong> Firebase Storage</li>
+                                <li><strong>Functions:</strong> Firebase Cloud Functions</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card h-100 bg-dark border-success">
+                        <div class="card-body">
+                            <h3 class="card-title h5 terminal-text">DevOps</h3>
+                            <ul class="card-text small">
+                                <li><strong>Hosting:</strong> Vercel</li>
+                                <li><strong>Version Control:</strong> Git, GitHub</li>
+                                <li><strong>Build Tools:</strong> Vite</li>
+                                <li><strong>Testing:</strong> Vitest, Playwright</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card h-100 bg-dark border-success">
+                        <div class="card-body">
+                            <h3 class="card-title h5 terminal-text">Media & Interaction</h3>
+                            <ul class="card-text small">
+                                <li><strong>Audio:</strong> Web Audio API</li>
+                                <li><strong>State:</strong> Svelte stores</li>
+                                <li><strong>APIs:</strong> REST API integration</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="mb-5">
+            <h2 class="terminal-text mb-4">Gallery</h2>
+            
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <img src="https://via.placeholder.com/800x450?text=Terminal+Interface" alt="Terminal Interface" class="img-fluid rounded mb-2">
+                    <p class="text-center text-muted small">Terminal Interface</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://via.placeholder.com/800x450?text=TABS+Radio" alt="TABS Radio" class="img-fluid rounded mb-2">
+                    <p class="text-center text-muted small">TABS Radio System</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://via.placeholder.com/800x450?text=Research+Logs" alt="Research Logs" class="img-fluid rounded mb-2">
+                    <p class="text-center text-muted small">Research Logs Archive</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://via.placeholder.com/800x450?text=Blueprint+Documentation" alt="Blueprint Documentation" class="img-fluid rounded mb-2">
+                    <p class="text-center text-muted small">Blueprint Documentation</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="philosophy" class="mb-5">
+            <h2 class="terminal-text mb-4">Design Philosophy</h2>
+            <div class="card bg-dark border-success">
+                <div class="card-body">
+                    <p class="card-text">
+                        KAPSULE embraces a retrofuturistic aesthetic that combines CRT monitor visual artifacts, 
+                        teletext-style information display, command-line interface nostalgia, glitch art, digital corruption effects, 
+                        and mysterious narrative elements.
+                    </p>
+                    <p class="card-text">
+                        The design creates an immersive experience that feels both nostalgic and futuristic, 
+                        using deliberate visual "imperfections" to enhance atmosphere.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="mb-5">
+            <h2 class="terminal-text mb-4">Contact</h2>
+            <div class="card bg-dark border-success">
+                <div class="card-body">
+                    <p class="card-text">For inquiries about this project:</p>
+                    <ul>
+                        <li><strong>Email:</strong> <a href="mailto:kenlumumba@gmail.com" class="text-light">kenlumumba@gmail.com</a></li>
+                        <li><strong>Portfolio:</strong> <a href="https://thekapsule.vercel.app/" class="text-light">https://thekapsule.vercel.app/</a></li>
+                        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ken-lumumba-890119100/" class="text-light">https://www.linkedin.com/in/ken-lumumba-890119100/</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center mt-5 pt-4 border-top border-secondary">
+            <p>© Ken Lumumba, 2023-2024. All Rights Reserved.</p>
+            <p class="text-muted small">This is a showcase page for a private codebase project.</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html> 
